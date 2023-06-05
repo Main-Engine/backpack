@@ -2,9 +2,10 @@
   "name": "@mainengine/backpack",
   "version": "1.0.2",
   "source": "src/index",
-  "react-native": "src/index.tsx",
+  "main": "lib/module/index.js",
+  "react-native": "lib/module/index.js",
   "module": "lib/module/index.js",
-  "types": "lib/typescript/src/index.d.ts",
+  "types": "lib/typescript/index.d.ts",
   "scripts": {
     "test": "jest",
     "typecheck": "tsc --noEmit",
@@ -26,22 +27,7 @@
   },
   "files": [
     "src",
-    "lib",
-    "!**/__tests__",
-    "!**/__fixtures__",
-    "!**/__mocks__",
-    "android",
-    "ios",
-    "cpp",
-    "*.podspec",
-    "!lib/typescript/example",
-    "!ios/build",
-    "!android/build",
-    "!android/gradle",
-    "!android/gradlew",
-    "!android/gradlew.bat",
-    "!android/local.properties",
-    "!**/.*"
+    "lib"
   ],
   "keywords": [
     "react-native",
@@ -117,7 +103,6 @@
       ]
     ]
   },
-  "main": "lib/module/index.js",
   "eslintIgnore": [
     "node_modules/",
     "lib/"

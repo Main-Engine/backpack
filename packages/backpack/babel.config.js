@@ -1,6 +1,3 @@
-const path = require('path')
-const root = path.resolve(__dirname, '..')
-
 module.exports = (api) => {
 	api.cache(true)
 	return {
