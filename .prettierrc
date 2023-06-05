@@ -8,6 +8,7 @@
   "trailingComma": "all",
   "importOrder": [
     "<THIRD_PARTY_MODULES>",
+    "^@backpack/(.*)$",
     "^(./)",
     "^(../)"
   ],
