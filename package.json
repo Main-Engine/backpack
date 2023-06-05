@@ -1,0 +1,10 @@
+{
+  "name": "mainengine",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/src/index.js",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "start": "cd apps/demo && yarn start"
+  }
+}
