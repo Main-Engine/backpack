@@ -101,9 +101,19 @@
     "source": "src",
     "output": "lib",
     "targets": [
-      "module",
-      "typescript"
-    ]
+			[
+				"module",
+				{
+					"configFile": true
+				}
+			],
+			[
+				"typescript",
+				{
+					"project": "tsconfig.build.json"
+				}
+			]
+		]
   },
   "devDependencies": {
     "react-native-builder-bob": "^0.20.4"
