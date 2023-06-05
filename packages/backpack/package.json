@@ -2,5 +2,8 @@
   "name": "@mainengine/backpack",
   "version": "1.0.0",
   "main": "index",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react-native-logs": "^5.0.1"
+  }
 }
