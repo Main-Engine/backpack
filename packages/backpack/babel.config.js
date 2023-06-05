@@ -9,9 +9,9 @@ module.exports = (api) => {
 			[
 				'module-resolver',
 				{
-					root: ['./src/'],
+					root: ['./src'],
 					alias: {
-						'@backpack': path.join(root, '..', 'packages/backpack/src'),
+						'@backpack': '../../packages/backpack/src',
 					},
 					extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json'],
 				},
