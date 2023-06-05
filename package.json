@@ -7,6 +7,8 @@
 	"scripts": {
     "start": "cd apps/example && yarn start",
 		"prepack": "cd packages/backpack && yarn prepack",
+		"build": "cd packages/backpack && yarn build",
+		"release": "cd packages/backpack && yarn release",
 		"test": "jest",
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint \"**/*.{js,ts,tsx}\""
