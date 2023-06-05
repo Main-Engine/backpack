@@ -1,17 +1,30 @@
 {
 	"name": "mainengine",
 	"version": "1.0.0",
-  "private": true,
+	"private": true,
 	"description": "A toolkit for building Expo apps.",
-  "workspaces": ["apps/*", "packages/*"],
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
 	"scripts": {
-    "start": "cd apps/example && yarn start",
+		"start": "cd apps/example && yarn start",
 		"prepack": "cd packages/backpack && yarn prepack",
 		"build": "cd packages/backpack && yarn build",
-		"release": "cd packages/backpack && yarn release",
+		"release": "release-it",
 		"test": "jest",
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint \"**/*.{js,ts,tsx}\""
+	},
+	"release-it": {
+    "plugins": {
+      "@release-it-plugins/workspaces": {
+				"workspaces": [
+					"packages/*"
+				]
+			}
+    },
+		"npm": false
 	},
 	"devDependencies": {
 		"@babel/core": "^7.19.3",
@@ -21,6 +34,7 @@
 		"@expo/config": "~8.0.0",
 		"@expo/webpack-config": "^18.0.1",
 		"@react-native-community/eslint-config": "^3.0.2",
+		"@release-it-plugins/workspaces": "^3.2.0",
 		"@release-it/conventional-changelog": "^5.0.0",
 		"@trivago/prettier-plugin-sort-imports": "^3.2.0",
 		"@types/jest": "^27.4.0",

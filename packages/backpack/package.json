@@ -1,6 +1,6 @@
 {
   "name": "@mainengine/backpack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "source": "src/index",
   "react-native": "src/index.tsx",
   "module": "lib/module/index.js",
@@ -17,6 +17,9 @@
   },
   "dependencies": {
     "react-native-logs": "^5.0.1"
+  },
+  "devDependencies": {
+    "react-native-builder-bob": "^0.20.4"
   },
   "peerDependencies": {
     "react": "*",
@@ -101,22 +104,19 @@
     "source": "src",
     "output": "lib",
     "targets": [
-			[
-				"module",
-				{
-					"configFile": true
-				}
-			],
-			[
-				"typescript",
-				{
-					"project": "tsconfig.build.json"
-				}
-			]
-		]
-  },
-  "devDependencies": {
-    "react-native-builder-bob": "^0.20.4"
+      [
+        "module",
+        {
+          "configFile": true
+        }
+      ],
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
   },
   "main": "lib/module/index.js",
   "eslintIgnore": [
