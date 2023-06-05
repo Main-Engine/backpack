@@ -46,7 +46,10 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/Main-Engine/backpack",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Main-Engine/backpack.git"
+  },
   "author": "Wesley Vance <me@wesvance.com> (https://github.com/wesvance)",
   "license": "MIT",
   "bugs": {
@@ -109,5 +112,9 @@
   "eslintIgnore": [
     "node_modules/",
     "lib/"
-  ]
+  ],
+  "description": "It's dangerous to go alone - this backpack of tools saves time developing expo apps.",
+  "directories": {
+    "lib": "lib"
+  }
 }
