@@ -6,6 +6,7 @@
   "workspaces": ["apps/*", "packages/*"],
 	"scripts": {
     "start": "cd apps/example && yarn start",
+		"prepack": "cd packages/backpack && yarn prepack",
 		"test": "jest",
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint \"**/*.{js,ts,tsx}\""
