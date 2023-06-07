@@ -1,6 +1,5 @@
 import { InteractionManager } from 'react-native'
-
-import { consoleTransport, logger as libLogger, transportFunctionType } from './lib'
+import { consoleTransport, logger as libLogger, transportFunctionType } from 'react-native-logs'
 
 const transport: transportFunctionType = (props) => {
 	return consoleTransport(props)

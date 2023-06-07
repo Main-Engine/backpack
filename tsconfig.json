@@ -4,7 +4,7 @@
 		"allowUnusedLabels": false,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
-		"jsx": "react",
+		"jsx": "react-jsx",
 		"lib": ["esnext"],
 		"module": "esnext",
 		"moduleResolution": "node",
@@ -21,7 +21,7 @@
 		"target": "esnext",
     "baseUrl": ".",
     "paths": {
-      "@backpack/*": ["./packages/backpack/src/*"]
+      "@backpack/*": ["packages/backpack/src/*"]
 		},
   },
 }

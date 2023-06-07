@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "mainengine",
+    "slug": "mainengine",
+    "version": "1.0.3",
+    "description": "A toolkit for building Expo apps.",
+    "sdkVersion": "48.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
+  }
+}

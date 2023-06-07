@@ -1,12 +1,11 @@
-import { greeting } from '@mainengine/backpack'
+import { Box, greeting } from '@mainengine/backpack'
 import { StatusBar } from 'expo-status-bar'
-import React from 'react'
 import { Text, View } from 'react-native'
 
 export default function App() {
 	return (
 		<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-			<Text>{greeting()}</Text>
+			<Box>{greeting()}</Box>
 			<StatusBar style='auto' />
 		</View>
 	)
