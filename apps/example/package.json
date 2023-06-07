@@ -9,12 +9,13 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@mainengine/backpack": "*",
     "expo": "~48.0.15",
     "expo-status-bar": "~1.4.4",
-    "@mainengine/backpack": "*",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.71.8",
+    "react-native-reanimated": "~2.14.4",
     "react-native-web": "~0.18.10"
   },
   "devDependencies": {

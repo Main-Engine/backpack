@@ -73,7 +73,7 @@ export const WindowProvider = ({ children }: { children: React.ReactNode }) => {
 		breakpoints,
 		insets,
 	}
-
+	console.log('WindowProvider value: ', value)
 	return <WindowContext.Provider value={value}>{children}</WindowContext.Provider>
 }
 

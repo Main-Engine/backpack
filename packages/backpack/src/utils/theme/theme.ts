@@ -2,10 +2,9 @@
 import { computeVariants } from '@backpack/utils/colors'
 import { lg, md, sm, xl, xs, xxl } from '@backpack/utils/constants/breakpoints'
 
-import { color, font, image, radius, size, space } from './template'
+import { color, font, radius, size, space } from './template'
 
 const { colors } = color
-const { images } = image
 
 export type BreakpointArray = [number, number, number, number, number, number, number]
 export type BreakpointSizeMatrix = {
@@ -166,7 +165,6 @@ export const theme = ({
 
 	const calculatedTheme = {
 		maxWidth,
-		images: images[themeColor],
 		breakpoints: {
 			lg,
 			md,
