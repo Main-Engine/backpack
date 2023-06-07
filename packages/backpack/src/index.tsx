@@ -1,4 +1,3 @@
-export * from '@backpack/components/common'
-export * from '@backpack/components/partials'
+export * from '@backpack/components'
 
 export { RootContext as ThemeProvider } from '@backpack/contexts/Root'

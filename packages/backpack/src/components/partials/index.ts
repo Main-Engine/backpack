@@ -1,1 +1,1 @@
-export { ColorGrid } from './ColorGrid'
+export * from '.'
