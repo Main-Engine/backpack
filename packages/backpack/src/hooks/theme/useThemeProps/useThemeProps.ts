@@ -1,5 +1,4 @@
 import { useWindow } from '@backpack/contexts/Window'
-
 import { getBoxSpacing } from '@backpack/utils/getBoxSpacing'
 import { getResponsiveProp } from '@backpack/utils/getResponsiveProp'
 import { UnwrappedResponsiveProps } from '@backpack/utils/theme'

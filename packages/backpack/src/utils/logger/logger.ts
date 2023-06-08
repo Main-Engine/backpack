@@ -41,10 +41,5 @@ const defaultConfig = {
 
 const baseLogger = libLogger.createLogger(defaultConfig)
 const defaultLogger = baseLogger.extend('DEFAULT')
-const realmLogger = baseLogger.extend('REALM')
 
 export const { debug, info, success, warn, error, fatal } = defaultLogger
-
-export const logger = {
-	realm: realmLogger,
-}
