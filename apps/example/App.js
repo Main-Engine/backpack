@@ -1,16 +1,20 @@
-import { Box, ColorGrid, Text, ThemeProvider } from '@mainengine/backpack'
+import { Box, ColorGrid, RootContext, ScrollView, Text } from '@mainengine/backpack'
 import { StatusBar } from 'expo-status-bar'
 
-export default function App() {
+export const App = () => {
 	return (
-		<ThemeProvider>
-			<Box flex={1} align='center' justifyContent='center' background='base' padding='xs'>
-				<Box background='primary' margin='xxl'>
-					<Text>Hello World!</Text>
+		<RootContext>
+			<ScrollView>
+				<Box flex={1} align='center' justifyContent='center' background='base' padding='xs'>
+					<Box background='primary' margin='xxl'>
+						<Text>Hello World!</Text>
+					</Box>
+					<ColorGrid />
+					<StatusBar style='auto' />
 				</Box>
-				<ColorGrid />
-				<StatusBar style='auto' />
-			</Box>
-		</ThemeProvider>
+			</ScrollView>
+		</RootContext>
 	)
 }
+
+export default App
