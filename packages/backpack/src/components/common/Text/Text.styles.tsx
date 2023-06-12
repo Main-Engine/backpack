@@ -5,8 +5,7 @@ import { getDisplayStyles, getSpacingStyles, getTypographyStyles } from '@backpa
 
 import { StyledTextProps } from './Text.types'
 
-// @ts-expect-error: Jase, can you help here?
-export const StyledText = styled(Text)<StyledTextProps>`
+export const StyledText = styled(Text as any)<StyledTextProps>`
 	${({ theme, ...props }) => `
 			${getDisplayStyles(props)}
 			${getSpacingStyles(theme, props)}

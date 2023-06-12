@@ -11,8 +11,7 @@ import {
 
 import type { StyledBoxProps } from './Box.types'
 
-// @ts-expect-error - Jase, can you help me here?
-export const StyledBox = styled(Animated.View)<StyledBoxProps>(
+export const StyledBox = styled(Animated.View as any)<StyledBoxProps>(
 	{},
 	({ theme, ...props }) =>
 		`
