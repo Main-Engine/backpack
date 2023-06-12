@@ -34,7 +34,12 @@ export * from '@backpack/utils/logger'
 export * from '@backpack/utils/numbers'
 export * from '@backpack/utils/random'
 export * from '@backpack/utils/reanimated'
-export * from '@backpack/utils/safeArea'
-export * from '@backpack/utils/styled'
+export {
+	SafeAreaProvider,
+	SafeAreaView,
+	useSafeAreaInsets,
+	EdgeInsets,
+} from '@backpack/utils/safeArea'
+export { styled, ThemeContext, ThemeProvider } from '@backpack/utils/styled'
 export * from '@backpack/utils/styles'
 export * from '@backpack/utils/theme'
