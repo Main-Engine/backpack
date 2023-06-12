@@ -1,6 +1,6 @@
 {
  "name": "mainengine",
- "version": "1.0.7",
+ "version": "1.0.8",
  "private": true,
  "description": "A toolkit for building Expo apps.",
  "workspaces": [
