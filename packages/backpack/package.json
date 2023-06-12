@@ -1,6 +1,6 @@
 {
   "name": "@mainengine/backpack",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "source": "src/index",
   "main": "lib/module/index.js",
   "react-native": "lib/module/index.js",
