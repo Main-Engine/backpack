@@ -1,37 +1,22 @@
 {
   "extends": "expo/tsconfig.base",
-  "include": [".*.js", "**/*.js", "**/*.ts", "**/*.tsx", ".prettierrc.cjs"],
-  "exclude": [
-    "functions",
-    "node_modules",
-    ".eslintrc.js",
-    ".prettierrc",
-    "__tests__/**/*-test.ts",
-    "*.ios.js",
-    "*.app",
-    "./dist"
-  ],
+  "include": ["src/index.ts"],
   "compilerOptions": {
+    "noEmit": false,
     "strict": true,
     "jsx": "react-jsx",
     "baseUrl": ".",
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "outDir": "dist",
+    "declaration": true,
+    "emitDeclarationOnly": true,
     "paths": {
-      "assets": ["assets/*"],
-      "api": ["src/api/*"],
       "common/*": ["src/components/common/*"],
-      "partials/*": ["src/components/partials/*"],
-      "pages/*": ["src/components/pages/*"],
       "contexts/*": ["src/contexts/*"],
       "hooks/*": ["src/hooks/*"],
       "types/*": ["src/types/*"],
       "utils/*": ["src/utils/*"],
-      "*": ["src/*"],
-      "@/convex/*": ["./convex/*"]
+      "*": ["src/*"]
     }
-  },
-  "allowJs": false,
-  "noUnusedLocals": true,
-  "noUnusedParameters": true
+  }
 }

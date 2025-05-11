@@ -1,0 +1,2 @@
+export declare const mapboxPublicAccessToken =
+  'pk.eyJ1IjoiZXhwbG9yZWhlcmUiLCJhIjoiY2wwcHEzM2tjMjJtMTNqczVleGpxdGk4YyJ9.HxpE7ceCcve2VA7CTYumnQ'
