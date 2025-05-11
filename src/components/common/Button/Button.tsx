@@ -25,12 +25,10 @@ export const Button = ({
   disabled = false,
   withHaptics = false,
   height,
-  analyticInfo,
   ...rest
 }: ButtonProps &
   BoxProps & {
     activeScale?: number
-    analyticInfo?: { location: string; action: string }
     children?: string | string[]
   }) => {
   const { color: baseColor = 'secondary' } = useThemeProps({ color })
@@ -61,7 +59,6 @@ export const Button = ({
       onPress={computedOnPress}
       activeScale={rest.activeScale}
       withHaptics={withHaptics}
-      analyticInfo={analyticInfo}
       accessible
       accessibilityRole='button'
     >

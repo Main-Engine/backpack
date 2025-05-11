@@ -4,7 +4,6 @@ import { useAnimatedStyle, useSharedValue, withSpring, withTiming } from 'react-
 import { Pressable } from 'common/Pressable'
 
 import { impactMedium } from 'utils/haptics'
-import { verbose } from 'utils/logger'
 
 import { ScalePressProps } from './ScalePress.types'
 
@@ -29,7 +28,6 @@ export const ScalePress = ({
   defaultScale = 1,
   disabled = false,
   springConfig = DEFAULT_SPRING_CONFIG,
-  analyticInfo,
   ...restBoxProps
 }: ScalePressProps) => {
   const scale = useSharedValue(1)
@@ -67,9 +65,8 @@ export const ScalePress = ({
     if (onPress) {
       if (withHaptics) impactMedium()
       onPress()
-      verbose(`Future analytic - scalePressTap`, analyticInfo)
     }
-  }, [onPress, withHaptics, analyticInfo])
+  }, [onPress, withHaptics])
 
   const handleLongPress = useCallback(() => {
     if (onLongPress) {

@@ -21,5 +21,4 @@ export type ScalePressProps = Omit<PressableProps, 'children'> & {
     mass: number
     stiffness: number
   }
-  analyticInfo?: { location: string; action: string }
 }

@@ -2,7 +2,6 @@ import { useCallback, useEffect, useState } from 'react'
 import { runOnJS } from 'react-native-reanimated'
 
 import { impactMedium } from 'utils/haptics'
-import { verbose } from 'utils/logger'
 import {
   Gesture,
   GestureDetector,
@@ -27,8 +26,7 @@ export const ScalePressGesture = ({
     damping: 10,
     mass: 0.5,
     stiffness: 600
-  },
-  analyticInfo
+  }
 }: ScalePressProps) => {
   const [activeGesture, setActiveGesture] = useState('')
 
@@ -47,19 +45,15 @@ export const ScalePressGesture = ({
     if (onPress) {
       if (withHaptics) impactMedium()
       onPress()
-
-      verbose(`Future analytic - scalePressTap`, analyticInfo)
     }
-  }, [analyticInfo, onPress, withHaptics])
+  }, [onPress, withHaptics])
 
   const handleDoubleTap = useCallback(() => {
     if (onDoublePress) {
       if (withHaptics) impactMedium()
       onDoublePress()
-
-      verbose(`Future analytic - scalePressDoubleTap`, analyticInfo)
     }
-  }, [analyticInfo, onDoublePress, withHaptics])
+  }, [onDoublePress, withHaptics])
 
   const handleLongPress = useCallback(() => {
     if (onLongPress) {
