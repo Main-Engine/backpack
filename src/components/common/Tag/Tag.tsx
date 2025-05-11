@@ -1,6 +1,6 @@
 import { BoxProps } from 'common/Box'
 import { Icon, IconKey } from 'common/Icon'
-import { Stack } from 'common/Stack'
+import { Box } from 'common/Box'
 import { Typography } from 'common/Typography'
 
 import { Color, IconFontWeight, Size } from 'utils/theme'
@@ -27,7 +27,7 @@ export const Tag = ({
   border
 }: Props) => {
   return (
-    <Stack
+    <Box
       flexDirection='row'
       borderRadius={borderRadius}
       background={background || color}
@@ -45,6 +45,6 @@ export const Tag = ({
           {title}
         </Typography>
       ) : null}
-    </Stack>
+    </Box>
   )
 }

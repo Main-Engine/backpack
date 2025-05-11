@@ -3,7 +3,6 @@ import { router } from 'expo-router'
 import { Box, BoxProps } from 'common/Box'
 import { LoadingSpinner } from 'common/LoadingSpinner'
 import { ScalePress } from 'common/ScalePress'
-import { Stack } from 'common/Stack'
 import { Typography } from 'common/Typography'
 
 import { useThemeProps } from 'hooks/theme/useThemeProps'
@@ -67,7 +66,7 @@ export const Button = ({
       accessibilityRole='button'
     >
       {(animatedStyle) => (
-        <Stack
+        <Box
           gap={size}
           opacity={loadingOrDisabled ? 0.8 : 1.0}
           borderRadius={borderRadius}
@@ -99,7 +98,7 @@ export const Button = ({
               {children}
             </Typography>
           )}
-        </Stack>
+        </Box>
       )}
     </ScalePress>
   )
